@@ -11,7 +11,7 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends Activity {
 
-
+    private static int counter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                button.setText("nochmal!");
+                setContentView(new GameView());
             }
         });
     }
